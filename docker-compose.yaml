@@ -1,0 +1,14 @@
+version: "3"
+services:
+  web-logbook:
+    container_name: web-logbook
+    volumes:  
+      - /mnt/user/docker/web-logbook:/config
+    image: samabsalom/web-logbook:latest
+    ports:
+      - 4000:4000/tcp
+    network_mode: bridge
+
+
+
+
